@@ -211,6 +211,7 @@ class PublishPage: UIViewController{
 
         wordTextView = UITextView.init(frame: .zero)
         wordTextView.isEditable = false
+        wordTextView.layoutManager.allowsNonContiguousLayout = false
         wordTextView.text = wordStr
         wordTextView.font = UIFont.systemFont(ofSize: 14)
         wordTextView.textColor = UIColor(red: 51.0 / 255.0, green: 51.0 / 255.0, blue: 51.0 / 255.0, alpha: 1.0)
